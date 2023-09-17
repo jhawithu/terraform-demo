@@ -14,7 +14,7 @@ provider "aws" {
 
 resource "aws_instance" "my-ec2" {
   ami           = "ami-076754bea03bde973"
-  instance_type = "t2.micro"
+  instance_type = var.instance-type
   tags = {
     "Name" = "My-EC2"
   }
